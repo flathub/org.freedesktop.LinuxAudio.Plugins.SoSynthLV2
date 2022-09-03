@@ -1,8 +1,8 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.SoSynthLV2",
-    "branch": "21.08",
+    "branch": "22.08",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "runtime-version": "21.08",
+    "runtime-version": "stable",
     "sdk": "org.freedesktop.Sdk",
     "build-extension": true,
     "appstream-compose": false,
