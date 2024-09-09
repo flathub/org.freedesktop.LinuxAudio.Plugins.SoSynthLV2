@@ -1,11 +1,10 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.SoSynthLV2",
-    "branch": "23.08",
+    "branch": "24.08",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
     "runtime-version": "stable",
-    "sdk": "org.freedesktop.Sdk//23.08",
+    "sdk": "org.freedesktop.Sdk//24.08",
     "build-extension": true,
-    "appstream-compose": false,
     "build-options": {
         "append-pkg-config-path": "/app/extensions/Plugins/SoSynthLV2/lib/pkgconfig",
         "prefix": "/app/extensions/Plugins/SoSynthLV2"
@@ -29,7 +28,6 @@
             ],
             "post-install": [
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.SoSynthLV2.metainfo.xml",
-                "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.SoSynthLV2 --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.SoSynthLV2",
                 "install -Dm644 -t $FLATPAK_DEST/share/licences/sosynth LICENSE"
             ],
             "sources": [
